@@ -19,7 +19,7 @@ dark = re.search(r'\*dark', file)
 if light:
 	new_file = re.sub(r"\*light", "*dark", file, flags = re.M)
 	doc.write(new_file)
-# If alacritty is in light mode, switch to dark mode	
+# If alacritty is in dark mode, switch to light mode	
 if dark:
 	new_file = re.sub(r"\*dark", "*light", file, flags = re.M)
 	doc.write(new_file)
