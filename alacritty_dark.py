@@ -19,8 +19,3 @@ if light:
 if dark:
 	new_file = re.sub(r"\*dark", "*light", file, flags = re.M)
 	doc.write(new_file)
-	
-
-
-#config = re.search("\*dark", config)
-
